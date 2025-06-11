@@ -34,5 +34,8 @@ model.compile(optimizer='adam',
               loss='categorical_crossentropy',
               metrics=['accuracy'])
 
+# Save the model to a file
+model.save('alexnet_model.h5')
+
 # Print model summary
 model.summary()
